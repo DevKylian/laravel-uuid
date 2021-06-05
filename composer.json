@@ -1,0 +1,28 @@
+{
+    "name": "devkylian/laravel-uuid",
+    "description": "Eloquent UUID Trait for Laravel 6 and above.",
+    "type": "plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kylian Dev",
+            "email": "contact@kyliandev.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : "^7.4|^8.0",
+        "illuminate/support": "^6|^7|^8",
+        "illuminate/database": "^6|^7|^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevKylian\\Uuid\\": "src"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
+    }
+}
